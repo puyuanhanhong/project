@@ -1,8 +1,11 @@
 <template>
 	<div class="detail">
-		<header> <span class="fanhui" @click="fanhui()">&lt; </span>详情</header>
+		<header>
+			<span class="fanhui" @click="fanhui()">&lt; </span>详情</header>
 		<section>
-			<h1>{{detail}}</h1>
+			<p>{{detail}}</p>
+			<img :src="img" alt="">
+			<span>价格:{{price}}</span>
 		</section>
 
 	</div>
@@ -14,7 +17,9 @@
 		name:'Detail',
 		data(){
 			return{
-				detail:""
+				detail:"",
+				img:'',
+				price:''
 			}
 		},
 		methods:{
@@ -29,7 +34,10 @@
 				url:'http://jx.xuzhixiang.top/ap/api/detail.php',
 				params:{uid:'11475',id:_this.$route.params.id}
 			}).then((data)=>{
+				// console.log(data.data.data)
 				_this.detail=data.data.data.pdesc;
+				_this.img=data.data.data.pimg;
+				_this.price=data.data.data.pprice;
 			})
 		}
 	}
@@ -40,20 +48,30 @@
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
+		font-size: 14px;
 	}
 	header{
 		height: 50px;
 		line-height: 50px;
-		background: yellowgreen;
+		background: rgb(227, 225, 225);
 		text-align: center;
 	}
 	section{
 		flex: 1;
+		padding-top: 10px;
+		font-size: 14px;
+	}
+	section span{
+		display: block;
+		margin-top: 10px;
 	}
 	.fanhui{
 		  position: absolute;
    		 left: 20px;
    		 color: #fff;
-   		 font-size: 25px;
+   		 font-size: 16px;
+	}
+	img{
+		margin-top: 10px;
 	}
 </style>

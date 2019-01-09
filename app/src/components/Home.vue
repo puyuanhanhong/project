@@ -1,6 +1,6 @@
 <template>
 
-	<div id="">
+	<div id="home">
 		<!-- <ul>
 			<li v-for="item in list"><router-link :to="'/detail/'+item.pid">{{item.pname}}</router-link></li>
 		</ul> -->
@@ -62,6 +62,9 @@ export default {
 
 
 <style scoped="">
+#home{
+	font-size: 12px;
+}
 	ul{
 		display:flex;
 		justify-content:space-around;
