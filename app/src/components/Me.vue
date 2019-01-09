@@ -11,7 +11,8 @@
 			<router-link to='/setup' tag='span'>设置</router-link>
 		</nav>
 
-		<ul class="user">
+		<section>
+			<ul class="user">
 			<li></li>
 			<li>
 				<p>用户名</p>
@@ -29,7 +30,7 @@
 		</div>
 
 		<ul>
-			<li>我的课程<router-link to='/mydata' tag='span'>&gt;</router-link></li>
+			<li>我的课程<router-link to='/mycourses' tag='span'>&gt;</router-link></li>
 			<li>我的活动 <span>打赏你的活动</span><router-link to='/mydata' tag='span'>&gt;</router-link></li>
 			<li>我的社区<router-link to='/mydata' tag='span'>&gt;</router-link></li>
 			<li>我的收藏<router-link to='/mydata' tag='span'>&gt;</router-link></li>
@@ -39,6 +40,19 @@
 			<li>我的订单<router-link to='/mydata' tag='span'>&gt;</router-link></li>
 			<li>购物车<router-link to='/mydata' tag='span'>&gt;</router-link></li>
 		</ul>
+		</section>
+
+		
+
+
+		<footer>
+			<router-link to="/home" tag="span">首页</router-link>
+			<router-link to="/exercise" tag='span'>运动</router-link>
+			<router-link to='/diet' tag="span">饮食</router-link>
+			<router-link to="/sleep" tag="span">睡眠</router-link>
+			<router-link to="/goods" tag="span">商品</router-link>
+			<router-link to="/me" tag="span">我的</router-link>
+   		</footer>
 	</div>
 </template>
 
@@ -64,7 +78,6 @@
 
 <style scoped="">
 #me{
-	padding: 0 10px;
 	font-size: 12px;
 	color: rgb(16, 16, 16);
 }
@@ -151,4 +164,24 @@ p:last-child{
 	display: flex;
 	justify-content: space-between;
 }
+section{
+	padding: 0 10px;
+}
+footer{
+		width: 100%;
+		height: 30px;
+		background: rgb(227, 225, 225);
+		text-align: center;
+		line-height: 30px;
+		position: fixed;
+		bottom: 0;
+
+	}
+	footer span{
+		display: block;
+		float: left;
+		width: 54px;
+		color: rgba(119, 118, 118, 1);
+		font-size: 12px;
+	}
 </style>

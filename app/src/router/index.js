@@ -17,6 +17,18 @@ import Personal from '@/components/Personal'
 import Mydata from '@/components/Mydata'
 import Message from '@/components/Message'
 import Setup from '@/components/Setup'
+import Traincamp from '@/components/Traincamp'
+import Walking from '@/components/Walking'
+import Yoga from '@/components/Yoga'
+import Kit from '@/components/Kit'
+import Cycling from '@/components/Cycling'
+import Fitness from '@/components/Fitness'
+import Cookbook from '@/components/Cookbook'
+import Foodmaterial from '@/components/Foodmaterial'
+import Eatdrink from '@/components/Eatdrink'
+import Topic from '@/components/Topic'
+import Onlineteaching from '@/components/Onlineteaching'
+import Mycourses from '@/components/Mycourses'
 import Logo from '@/components/Logo'
 import Login from '@/components/Login'
 import Remen from '@/components/Remen'
@@ -61,10 +73,6 @@ export default new Router({
 
 		    },
 		    {
-		    		path:'/me',
-		    		component:Me
-		    },
-		    {
 		    		path:'/goods',
 						component:Goods,
 						children:[
@@ -92,14 +100,70 @@ export default new Router({
 				},
 				{
 					path:'/exercise',
-					component:Exercise
+					component:Exercise,
+					children:[
+						{
+							path:'/cycling',
+							component:Cycling
+						},
+						{
+							path:'/traincamp',
+							component:Traincamp
+						},
+						{
+							path:'/walking',
+							component:Walking
+						},
+						{
+							path:'/fitness',
+							component:Fitness
+						},
+						{
+							path:'/yoga',
+							component:Yoga
+						},
+						{
+							path:'/kit',
+							component:Kit
+						}
+					]
 				},
 				{
 					path:'/diet',
-					component:Diet
+					component:Diet,
+					children:[
+						{
+							path:'/cookbook',
+							component:Cookbook
+						},
+						{
+							path:'/foodmaterial',
+							component:Foodmaterial
+						},
+						{
+							path:'/eatdrink',
+							component:Eatdrink
+						},
+						{
+							path:'/topic',
+							component:Topic
+						},
+						{
+							path:'/onlineteaching',
+							component:Onlineteaching
+						},
+					]
 				}
       ]
-    },
+	},
+	{
+		path:'/me',
+		component:Me
+	 },
+	 {
+		path:'/mycourses',
+		component:Mycourses
+	 },
     {
     		path:'/detail/:id',
     		component:Detail
