@@ -168,19 +168,18 @@ section{
 	padding: 0 10px;
 }
 footer{
-		width: 100%;
 		height: 30px;
 		background: rgb(227, 225, 225);
 		text-align: center;
 		line-height: 30px;
 		position: fixed;
 		bottom: 0;
-
+		display: flex;
 	}
 	footer span{
 		display: block;
 		float: left;
-		width: 54px;
+		width: 4rem;
 		color: rgba(119, 118, 118, 1);
 		font-size: 12px;
 	}

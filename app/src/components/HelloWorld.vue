@@ -90,19 +90,20 @@ export default {
 		background: rgb(227, 225, 225);
 		text-align: center;
 		line-height: 30px;
+		position: fixed;
+		bottom: 0;
+		display: flex;
 	}
 	section{
 		flex: 1;
 		background: rgb(252, 252, 252);
 		color: rgba(119, 118, 118, 1);
 	}
-	footer{
-		overflow: hidden;
-	}
 	
 	footer span{
+		display: block;
 		float: left;
-		width: 16%;
+		width: 4rem;
 		color: rgba(119, 118, 118, 1);
 		font-size: 12px;
 	}
