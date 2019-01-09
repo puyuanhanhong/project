@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="goods">
 		<div>
 			<router-link to='/paobuji' tag="span">跑步机</router-link>
 			<router-link to='/yujia' tag='span'>瑜伽</router-link>
@@ -25,6 +25,10 @@
 </script>
 
 <style scoped="">
+#goods{
+	display: flex;
+	flex-direction: column;
+}
 .router-link-active{
 		border-bottom: 1px solid rgb(217, 214, 214);
 	}

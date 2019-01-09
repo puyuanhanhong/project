@@ -73,26 +73,27 @@ export default new Router({
 
 		    },
 		    {
-		    		path:'/goods',
-						component:Goods,
-						children:[
-							{
-								path:'/paobuji',
-								component:Paobuji
-							},
-							{
-								path:'/yujia',
-								component:Yujia
-							},
-							{
-								path:'/foods',
-								component:Foods
-							},
-							{
-								path:'/zhumian',
-								component:Zhumian
-							} 
-						]
+					path:'/goods',
+					redirect:'/paobuji',
+					component:Goods,
+					children:[
+						{
+							path:'/paobuji',
+							component:Paobuji
+						},
+						{
+							path:'/yujia',
+							component:Yujia
+						},
+						{
+							path:'/foods',
+							component:Foods
+						},
+						{
+							path:'/zhumian',
+							component:Zhumian
+						} 
+					]
 				},
 				{
 					path:'/sleep',
