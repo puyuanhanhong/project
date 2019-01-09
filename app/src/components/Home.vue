@@ -63,7 +63,7 @@ export default {
 
 <style scoped="">
 #home{
-	font-size: 12px;
+	font-size: 12px；
 }
 	ul{
 		display:flex;
