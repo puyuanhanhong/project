@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
@@ -38,7 +37,7 @@ import Daren from '@/components/Daren'
 import Like from '@/components/Like'
 import Wenzhang from '@/components/Wenzhang'
 
-=======
+/* =======
 import Vue from 'vue'//vue
 import Router from 'vue-router'//router
 import HelloWorld from '@/components/HelloWorld'//hellowworld根页面
@@ -77,7 +76,7 @@ import Zuixin from '@/components/Zuixin'//主页	最新
 import Daren from '@/components/Daren'//主页	享瘦达人
 import Like from '@/components/Like'//主页	猜你喜欢
 >>>>>>> adf2f2173b0b369066b15450a54c54e0bdfa5ec8
-
+ */
 
 Vue.use(Router)
 
