@@ -1,8 +1,11 @@
 <template>
 	<div id="paobuji">
 		<ul>
-			<li v-for="(item,i) in list" :key='i'><img :src='item.pimg' alt=""><div><router-link :to="'/detail/'+item.pid" tag="span">{{item.pname}}</router-link><p>查看详情</p></div></li>
+			<li v-for="(item,i) in list" :key='i'><img :src='item.pimg' alt=""><div><router-link :to="'/detail/'+item.pid" tag="span">{{item.pname}}</router-link><router-link :to="'/detail/'+item.pid" tag="p">查看详情</router-link></div></li>
 		</ul>
+		<!-- <ul>
+			<li v-for="(item,i) in list" :key='i'><img :src='item.yz' alt=""><div><router-link :to="'/detail/'+item.pid" tag="span">{{item.name}}</router-link><p>查看详情</p></div></li>
+		</ul> -->
 
 	</div>
 </template>
@@ -29,11 +32,14 @@ import Mock from 'mockjs';
 			}
 		},
 		mounted(){
-			/* axios({
+			/* this.$emit('toparent',this.tit)
+			var _this=this;
+			axios({
 					method:'get',
-					url:"http://121.199.46.215:8090/qz/appcitylistGoodsdetail.action"
+					url:"http://www.aaa.com"
 				}).then(function(data){
-
+					console.log(data.data)
+					_this.list=data.data.users;
 				})	
 			 */
 
@@ -46,7 +52,7 @@ import Mock from 'mockjs';
 				params:{uid:'11475'}
 			}).then((data)=>{
 				_this.list=data.data.data
-				console.log(_this.list)
+				// console.log(_this.list)
 			})
 
 
@@ -68,13 +74,21 @@ li{
 }
 #paobuji li{
 	display: flex;
+	margin-top: 15px;
+}
+#paobuji li p{
+	margin: 2rem 0 0 12rem;
+	border: 1px solid rgb(217, 214, 214);
+	text-align: center;
+	width: 70px;
+	border-radius: 10px;
 }
 #paobuji li div{
 	display: flex;
 	flex-direction: column;
 }
 #paobuji ul{
-	margin-top: 50px;
+	margin-top: 10px;
 }
 img{
 	height: 100px;

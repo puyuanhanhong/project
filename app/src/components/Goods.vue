@@ -28,6 +28,7 @@
 #goods{
 	display: flex;
 	flex-direction: column;
+	font-size: 12px;
 }
 .router-link-active{
 		border-bottom: 1px solid rgb(217, 214, 214);
@@ -35,8 +36,7 @@
 span{
 	margin-top: 10px;
 	color: rgb(16, 16, 16);
-	font-size: 14px;
-	font-weight: 600;
+	font-weight: 400;
 	width: 25%;
 	height: 30px;
 	display: block;

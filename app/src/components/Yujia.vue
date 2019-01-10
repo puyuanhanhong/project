@@ -46,7 +46,7 @@ import Mock from 'mockjs';
 				params:{uid:'11475'}
 			}).then((data)=>{
 				_this.list=data.data.data
-				console.log(_this.list)
+				// console.log(_this.list)
 			})
 
 
@@ -74,7 +74,7 @@ li{
 	flex-direction: column;
 }
 #paobuji ul{
-	margin-top: 50px;
+	margin-top: 10px;
 }
 img{
 	height: 100px;

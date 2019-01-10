@@ -63,10 +63,17 @@ export default {
 </script>
 
 
+<<<<<<< HEAD
 <style scoped="">	
 	#home{
 		font-size: 12px;
 	}
+=======
+<style scoped="">
+#home{
+	font-size: 12px；
+}
+>>>>>>> adf2f2173b0b369066b15450a54c54e0bdfa5ec8
 	ul{
 		display:flex;
 		justify-content:space-around;

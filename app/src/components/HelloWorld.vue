@@ -86,6 +86,7 @@ export default {
 		outline:none;
 	}
 	footer{
+		width: 100%;
 		height: 30px;
 		background: rgb(227, 225, 225);
 		text-align: center;
@@ -103,7 +104,7 @@ export default {
 	footer span{
 		display: block;
 		float: left;
-		width: 4rem;
+		width: 20%;
 		color: rgba(119, 118, 118, 1);
 		font-size: 12px;
 	}
