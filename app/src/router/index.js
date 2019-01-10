@@ -35,6 +35,8 @@ import Remen from '@/components/Remen'
 import Zuixin from '@/components/Zuixin'
 import Daren from '@/components/Daren'
 import Like from '@/components/Like'
+import Wenzhang from '@/components/Wenzhang'
+
 
 
 Vue.use(Router)
@@ -172,7 +174,8 @@ export default new Router({
     },
     {
     		path:'/register',
-    		component:Register
+			component:Register,
+			
 	},
 	{
 		path:'/personal',
@@ -198,5 +201,10 @@ export default new Router({
 		path:'/login',
 		component:Login
 	},
+	{
+		path:'/wenzhang',
+		component:Wenzhang
+	},
+
   ]
 })

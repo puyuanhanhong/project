@@ -18,9 +18,12 @@
 			
 			<ul>
 				<li>
-					<img src="" alt="">
-					<em><a href="#">健身健身健身健身健身</a></em>
-				</li>
+					<router-link to="/Wenzhang">
+						<img src="" alt="">
+						<em>健身健身健身健身健身</em>
+					</router-link>
+					
+				</li>	
 				<li>
 					<img src="" alt="">
 					<em><a href="#">健身健身健身健身健身</a></em>
@@ -50,7 +53,9 @@
 
 <script>
 export default {
-    name:"Zuixin",
+	name:"Zuixin",
+	
+
 }
 </script>
 
@@ -78,7 +83,7 @@ section{
 	li{
 		list-style: none;
 	}
-	ul>li>img{
+	ul li img{
 		display: block;
 		width: 90%;
 		height: 95px;
